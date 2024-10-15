@@ -12,6 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Color.fromARGB(255, 0, 183, 255),
+          selectionColor: Color.fromARGB(117, 0, 183, 255),
+          selectionHandleColor: Color.fromARGB(255, 0, 183, 255),
+        ),
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),

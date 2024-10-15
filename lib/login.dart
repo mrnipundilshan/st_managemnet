@@ -28,27 +28,20 @@ class _loginState extends State<login> {
               image: DecorationImage(
                 image: AssetImage("assets/bg.png"),
                 fit: BoxFit.cover,
+                opacity: 0.52,
               ),
               color: Color.fromARGB(255, 0, 183, 255),
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: size.height * 0.25),
+                SizedBox(height: size.height * 0.2),
                 Text(
-                  "Hello User",
-                  style: GoogleFonts.oswald(
-                    color: Colors.black,
-                    fontSize: size.width * 0.08,
+                  "Welcome",
+                  style: GoogleFonts.poppins(
+                    color: const Color.fromARGB(255, 24, 14, 85),
+                    fontSize: size.width * 0.12,
                     fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  "Welcome To ECOBIN",
-                  style: GoogleFonts.oswald(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                    fontSize: size.width * 0.08,
                   ),
                 ),
                 SizedBox(height: size.height * 0.05),
@@ -66,7 +59,7 @@ class _loginState extends State<login> {
                           "Login",
                           style: GoogleFonts.oswald(
                             fontWeight: FontWeight.bold,
-                            color: Colors.black,
+                            color: const Color.fromARGB(255, 24, 14, 85),
                             fontSize: size.width * 0.08,
                           ),
                         ),
@@ -83,7 +76,7 @@ class _loginState extends State<login> {
                               borderRadius: BorderRadius.circular(10.0),
                               borderSide: const BorderSide(
                                 width: 1,
-                                color: Color.fromARGB(255, 31, 160, 143),
+                                color: const Color.fromARGB(255, 24, 14, 85),
                                 style: BorderStyle.solid,
                               ),
                             ),
@@ -109,7 +102,7 @@ class _loginState extends State<login> {
                               borderRadius: BorderRadius.circular(10.0),
                               borderSide: const BorderSide(
                                 width: 1,
-                                color: Color.fromARGB(255, 31, 160, 143),
+                                color: const Color.fromARGB(255, 24, 14, 85),
                                 style: BorderStyle.solid,
                               ),
                             ),
@@ -129,12 +122,14 @@ class _loginState extends State<login> {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.yellow),
+                              backgroundColor:
+                                  const Color.fromARGB(255, 0, 183, 255),
+                            ),
                             child: Text(
                               "LOGIN",
                               style: GoogleFonts.oswald(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: const Color.fromARGB(255, 24, 14, 85),
                                 fontSize: size.width * 0.06,
                               ),
                             ),
@@ -155,6 +150,7 @@ class _loginState extends State<login> {
                               TextSpan(
                                 text: 'Register',
                                 style: TextStyle(
+                                  color: const Color.fromARGB(255, 24, 14, 85),
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),

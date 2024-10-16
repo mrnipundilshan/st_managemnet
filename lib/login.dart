@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:stu_management/widgets/widgets.dart';
 
 class login extends StatefulWidget {
   login({super.key});
@@ -64,57 +65,15 @@ class _loginState extends State<login> {
                           ),
                         ),
                         SizedBox(height: size.height * 0.05),
-                        TextField(
-                          maxLength: 30,
-                          controller: usernamecontroller,
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: size.height * 0.02),
-                          cursorColor: Colors.black,
-                          decoration: InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                              borderSide: const BorderSide(
-                                width: 1,
-                                color: const Color.fromARGB(255, 24, 14, 85),
-                                style: BorderStyle.solid,
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                borderSide: const BorderSide(
-                                    width: 10, style: BorderStyle.solid)),
-                            counterText: '',
-                            hintText: "Username",
-                            hintStyle: const TextStyle(color: Colors.black),
-                          ),
-                        ),
+                        text_field(
+                            controller: usernamecontroller,
+                            size: size,
+                            hint: "Username"),
                         SizedBox(height: size.height * 0.01),
-                        TextField(
-                          maxLength: 20,
-                          controller: passwordcontroller,
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: size.height * 0.02),
-                          cursorColor: Colors.black,
-                          decoration: InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                              borderSide: const BorderSide(
-                                width: 1,
-                                color: const Color.fromARGB(255, 24, 14, 85),
-                                style: BorderStyle.solid,
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                borderSide: const BorderSide(
-                                    width: 10, style: BorderStyle.solid)),
-                            counterText: '',
-                            hintText: "Password",
-                            hintStyle: const TextStyle(color: Colors.black),
-                          ),
-                        ),
+                        text_field(
+                            controller: passwordcontroller,
+                            size: size,
+                            hint: "Password"),
                         SizedBox(height: size.height * 0.01),
                         Container(
                           width: size.width * 0.95,

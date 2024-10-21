@@ -57,7 +57,7 @@ class _loginState extends State<login> {
                     child: Column(
                       children: <Widget>[
                         Text(
-                          "Login",
+                          "Logi",
                           style: GoogleFonts.oswald(
                             fontWeight: FontWeight.bold,
                             color: const Color.fromARGB(255, 24, 14, 85),
